@@ -1,0 +1,16 @@
+{
+    "name": "Anti Free Nitro Scams",
+    "description": "Title says it all, stay safe, friend.",
+    "version": "1.0.2",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://*/*","http://*/*"],
+         "js": ["content.js"],
+         "run_at": "document_end"
+        }
+    ]
+  }
